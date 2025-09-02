@@ -18,6 +18,7 @@ func isGolden(a, b float64) bool {
 	}
 	ratio := (a + b) / a
 	distance := math.Abs(ratio - target)
+	fmt.Println("distance : ", distance)
 	return distance < tolerance
 }
 
